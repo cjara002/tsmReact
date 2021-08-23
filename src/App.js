@@ -2,6 +2,8 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import tennisLogo from "./img/tennisLogo.png";
 import React from "react";
+import practice from "./img/practice.jpg";
+import ball from "./img/tennisBall.jpg";
 
 function App() {
   return (
@@ -122,7 +124,7 @@ function App() {
           </div>
         </div>
       </header>
-{/* About Us */}
+{/* About Us Start*/}
     <section class="bg-light text-center">
             <div class="container">
                 <div class="mb-5 text-center">
@@ -133,11 +135,130 @@ function App() {
                     </p>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-10"><img src="img/content/world-map.svg" alt="..."/></div>
+                    <div class="col-md-10"><img src={practice} alt="..."/></div>
                 </div>
             </div>
     </section>
+    {/* About Us End*/}
+{/*Features Start*/}
+    <section className="pt-0">
+    <div className="container">
+      <div className="row">
 
+        <div className="col-md-6 col-lg-4 mb-1-6 mb-lg-0">
+          <div className="card bg-primary border-0 card-style7 h-100">
+            <div className="card-body pb-2-0 pt-5">
+              <i className="ti-time icon" />
+              <h3 className="text-white h4 mb-5">Feature 1</h3>
+              {/* <ul className="mb-0 list-unstyled">
+                <li className="text-white border-bottom mb-2 pb-2 border-color-light-white">
+                  <span>Monday - Friday </span>
+                  <span className="float-right">9.00 - 14.00</span>
+                </li>
+                <li className="text-white border-bottom mb-2 pb-2 border-color-light-white">
+                  <span>Saturday </span>
+                  <span className="float-right">9.00 - 14.00</span>
+                </li>
+                <li className="text-white">
+                  <span>Sunday </span>
+                  <span className="float-right">9.00 - 14.00</span>
+                </li>
+              </ul> */}
+            </div>
+          </div>
+        </div>
+
+        <div className="col-md-6 col-lg-4 mb-1-6 mb-lg-0">
+          <div className="card bg-primary border-0 card-style7 h-100">
+            <div className="card-body pb-2-0 pt-5">
+              <i className="ti-agenda icon" />
+              <h3 className="text-white h4 mb-5">Feature 2</h3>
+              {/* <ul className="mb-0 list-unstyled">
+                <li className="text-white border-bottom mb-2 pb-2 border-color-light-white">
+                  <span>Phone </span>
+                  <span className="float-right">(0) 1213 456 789</span>
+                </li>
+                <li className="text-white border-bottom mb-2 pb-2 border-color-light-white">
+                  <span>Email </span>
+                  <span className="float-right">youremail@here.com</span>
+                </li>
+                <li className="text-white">
+                  <span>Location </span>
+                  <span className="float-right">74 Guild Street, Town.</span>
+                </li>
+              </ul> */}
+            </div>
+          </div>
+        </div>
+
+        <div className="col-md-6 col-lg-4">
+          <div className="card bg-primary border-0 card-style7 h-100">
+            <div className="card-body pb-2-0 pt-5">
+              <i className="ti-email icon" />
+              <h3 className="text-white h4 mb-5">Feature 3</h3>
+              {/* <form
+                className="quform"
+                action="quform/newsletter-two.php"
+                method="post"
+                encType="multipart/form-data"
+                onclick
+              >
+                <div className="quform-elements">
+                  <div className="row">
+                    <div className="col-md-12">
+                      <div className="quform-element form-group">
+                        <div className="quform-input">
+                          <input
+                            className="form-control"
+                            id="email_address"
+                            type="text"
+                            name="email_address"
+                            placeholder="Enter your email"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-12">
+                      <div className="quform-submit-inner">
+                        <button
+                          className="butn white btn-block md"
+                          type="submit"
+                        >
+                          <span>Subscribe</span>
+                        </button>
+                      </div>
+                      <div className="quform-loading-wrap text-left">
+                        <span className="quform-loading" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form> */}
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+{/*Features End*/}
+
+{/* CTA Start */}
+<section class="bg-img cover-background theme-overlay" data-overlay-dark="8" style={{backgroundImage: `url(${ball})`}}>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-xl-7 text-center text-lg-left">
+                        <h2 class="text-white mb-1-6 mb-lg-0">Get Started today!</h2>
+                    </div>
+                    <div class="col-lg-4 col-xl-5">
+                        <div class="text-center text-lg-right">
+                            <a href="appointment.html" class="butn white">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+{/* CTA End */}
     </div>
 </React.Fragment>
     
