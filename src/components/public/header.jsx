@@ -9,7 +9,7 @@ const header = () => {
         data-scroll-index="0"
       >
         {/* Navigation */}
-        <nav className="navbar navbar-expand-lg onepage-nav bg-blue">
+        <nav className="navbar navbar-expand-lg onepage-nav bg-AO-blue">
           <div className="container">
             {/* Logo */}
             <a className="logo" href="#!" data-scroll-nav="0">
@@ -43,18 +43,13 @@ const header = () => {
             >
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <a className="nav-link active" href="#!" data-scroll-nav="0">
-                    Home
-                  </a>
-                </li>
-                <li className="nav-item">
                   <a className="nav-link" href="#!" data-scroll-nav="1">
-                    About
+                    ABOUT
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#!" data-scroll-nav="3">
-                    Contact
+                  <a className="nav-link" href="#!" data-scroll-nav="2">
+                    CONTACT
                   </a>
                 </li>
               </ul>

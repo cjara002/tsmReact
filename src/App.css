@@ -1,31 +1,34 @@
-/* Wimbledon Colors
-Dark Green #013220
-
-Purple #800080
-
-White #000 #fff */
-
-.App {
-  text-align: center;
+/*-----------------------------------------------------------------------------------
+       *
+       * AO THEME  START
+       * 
+----------------------------------------------------------------------------------- */
+.bg-AO-blue {
+  background-color: #377DB8 !important;
 }
 
-.bg-blue {
-  background-color: #31455a !important;
+.textAO {
+  color: white;
+}
+.nav-link {
+  color: White !important;
+}
+.nav-link:hover {
+  color: black !important;
 }
 
-/* END */
-
-.navbar .navbar-nav .nav-link.active {
-  color: #800080;
-}
-.navbar.nav-scroll .navbar-nav .nav-link:hover,
-.navbar.nav-scroll .navbar-nav .nav-link.active {
-  color: #800080;
+.icon-AO {
+  color: #1E8FD5;
 }
 
-/* button style */
+.icon-AO:hover
+ {
+  color: #fff;
+  background: #1e2022;
+ }
+
 .butn {
-  background: #013220;
+  background: #1E8FD5;
   cursor: pointer;
   font-weight: 600;
   color: #fff;
@@ -67,6 +70,40 @@ a.butn:focus {
   padding: 8px 20px;
   white-space: nowrap;
 }
+/*-----------------------------------------------------------------------------------
+       *
+       * AO THEME END
+       * 
+----------------------------------------------------------------------------------- */
+
+/* Wimbledon Colors
+Dark Green #013220
+
+Purple #800080
+
+White #000 #fff */
+
+.App {
+  text-align: center;
+}
+
+.bg-US-blue {
+  background-color: #31455a !important;
+}
+
+
+
+/* END */
+
+/* .navbar .navbar-nav .nav-link.active {
+  color: #800080;
+}
+.navbar.nav-scroll .navbar-nav .nav-link:hover,
+.navbar.nav-scroll .navbar-nav .nav-link.active {
+  color: #800080;
+} */
+
+
 
 .tennisHeroBg {
   background-image: url(./img/eagleEyeCourt.jpg),
@@ -105,10 +142,6 @@ a.butn:focus {
 }
 /*-----------------------------------------------------------------------------------
        *
-       * Theme Name: Septosha - Medical Health Care Template
-       * Description: Medical Health Care Template
-       * Author: Chitrakoot Web
-       * Version: 2.0
        *
        * ----------------------------------------------------------------------------------- */
 /* ----------------------------------
@@ -416,42 +449,7 @@ a:active {
   text-decoration: none;
 }
 
-/* button style */
-.butn {
-  background: #00bcd1;
-  cursor: pointer;
-  font-weight: 600;
-  color: #fff;
-  letter-spacing: 1px;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 16px 32px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  -webkit-transition: all linear 300ms;
-  transition: all linear 300ms;
-  border: none;
-  text-align: center;
-}
-.butn:hover,
-.butn:active {
-  color: #fff;
-  background: #1e2022;
-}
 
-a.butn:hover,
-a.butn:active,
-a.butn:focus {
-  color: #fff;
-  background: #1e2022;
-}
-
-.butn:focus {
-  color: #fff;
-}
 .butn.white {
   background: #fff;
   color: #00bcd1;
@@ -907,13 +905,13 @@ a.butn.white:focus {
   margin-right: 0;
 }
 
-.navbar .navbar-nav .nav-link.active {
+/* .navbar .navbar-nav .nav-link.active {
   color: #00baee;
 }
 .navbar.nav-scroll .navbar-nav .nav-link:hover,
 .navbar.nav-scroll .navbar-nav .nav-link.active {
   color: #00baee;
-}
+} */
 
 @media screen and (max-width: 1499px) {
   .onepage-nav > .container {
