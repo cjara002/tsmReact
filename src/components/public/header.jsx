@@ -1,5 +1,6 @@
 import React from "react";
 import tennisLogo from "../../img/tennisLogo.png";
+import HambugerMenu from "./hamburgerMenu";
 
 const header = () => {
   return (
@@ -10,9 +11,10 @@ const header = () => {
       >
         {/* Navigation */}
         <nav className="navbar navbar-expand-lg onepage-nav bg-AO-blue">
-          <div className="container">
+        <HambugerMenu />
+          <div className="container d-none d-sm-block">
             {/* Logo */}
-            <a className="logo" href="#!" data-scroll-nav="0">
+            <a className="logo " href="#!" data-scroll-nav="0">
               {/* Need Logo for Tennis Website */}
               <img
                 src={tennisLogo}
@@ -21,8 +23,7 @@ const header = () => {
                 style={{ height: "auto", width: "10%" }}
               />
             </a>
-
-            <button
+            {/* <button
               className="navbar-toggler"
               type="button"
               data-toggle="collapse"
@@ -34,7 +35,7 @@ const header = () => {
               <span className="icon-bar">
                 <i className="fas fa-bars"></i>
               </span>
-            </button>
+            </button> */}
 
             {/* NavBar Links */}
             <div

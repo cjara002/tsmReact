@@ -13,7 +13,7 @@ const heroBanner = () => {
                 {/* <div className="container"> */}
               <div className="row align-items-center py-12 py-lg-10">
                   <div className="col-lg-6 mt-1-6 mt-lg-0 order-2 order-lg-1 position-relative text-white">
-                    <h6>Take your game to the next level...</h6>
+                    <h6 className="d-none d-sm-block">Take your game to the next level...</h6>
                     <h1 className="display-16 display-md-9 display-lg-7 display-xl-4 mb-1-6 font-weight-700 text-shadow">
                       Tap into your{" "}
                       <strong className="text-success font-weight-700">
