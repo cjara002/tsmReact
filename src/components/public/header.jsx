@@ -1,3 +1,6 @@
+// import {
+//   withAuthenticator,
+// } from "@aws-amplify/ui-react";
 import React from "react";
 import tennisLogo from "../../img/tennisLogo.png";
 import HambugerMenu from "./hamburgerMenu";
@@ -55,7 +58,7 @@ const header = () => {
                 </li>
               </ul>
               {/* Login Button */}
-              <a href="#!" className="butn small d-none d-lg-block ml-3" style={{textDecoration: "none"}}>
+              <a href="/" className="butn small d-none d-lg-block ml-3" style={{textDecoration: "none"}}>
                 Login
               </a>
             </div>
@@ -74,4 +77,5 @@ const header = () => {
   );
 };
 
+//export default withAuthenticator(header);
 export default header;
