@@ -1,11 +1,12 @@
-// import {
-//   withAuthenticator,
-// } from "@aws-amplify/ui-react";
+import {
+  withAuthenticator,
+  Button,
+} from "@aws-amplify/ui-react";
 import React from "react";
 import tennisLogo from "../../img/tennisLogo.png";
 import HambugerMenu from "./hamburgerMenu";
 
-const header = () => {
+function header ({ signOut }) {
   return (
     <React.Fragment>
       <header
@@ -47,8 +48,8 @@ const header = () => {
             >
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <a className="nav-link" href="#!" data-scroll-nav="1">
-                    ABOUT
+                  <a href="/notes" className="nav-link">
+                    Notes
                   </a>
                 </li>
                 <li className="nav-item">
@@ -58,9 +59,14 @@ const header = () => {
                 </li>
               </ul>
               {/* Login Button */}
-              <a href="/" className="butn small d-none d-lg-block ml-3" style={{textDecoration: "none"}}>
-                Login
-              </a>
+              {/* <a href="/in" className="butn small d-none d-lg-block ml-3" style={{textDecoration: "none"}}>
+                SignOut
+              </a> */}
+              <Button 
+              className="butn small d-none d-lg-block ml-3"
+              style={{textDecoration: "none"}}
+              onClick={signOut}>Sign Out
+              </Button>
             </div>
           </div>
           {/* sidemenu is not working */}
@@ -78,4 +84,4 @@ const header = () => {
 };
 
 //export default withAuthenticator(header);
-export default header;
+export default withAuthenticator(header);
